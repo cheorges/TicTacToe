@@ -18,7 +18,7 @@ GameState Game::setTokenAt(Coordinate coordinate) {
     if (field.set(coordinate, activePlayer->getToken())) {
         turn++;
         gameState = hasActivePlayerWin();
-        if (gameState == FINISH_WIN) {
+        if (gameState == FINISH_WIN || gameState == FINISH_TIE) {
             return gameState;
         }
     }
@@ -67,6 +67,7 @@ GameState Game::hasActivePlayerWin() {
 
 void Game::init() {
     field.clear();
+    turn = 0;
 }
 
 void Game::changeActivePlayer() {
