@@ -1,5 +1,5 @@
 # TicTacToe
-Classic snake game on the terminal; made with C++ and ncurses.
+Classic "TicTacToe" game on the terminal; made with C++ and ncurses.
 
 ## Usage
 TicTacToe depends on `ncurses`, it's used to show cute things on the terminal.
